@@ -3,10 +3,7 @@ from example2 import VNH2SP30
 from example2 import Motor
 
 board = Arduino('/dev/ttyACM0')
-# analog_0 = board.get_pin('a:0:o')
-# analog_1 = board.get_pin('a:1:o')
-# analog_0.write(1)
-# analog_1.write(1)
+
 # Initial pin
 ena = 5
 enb = 6
