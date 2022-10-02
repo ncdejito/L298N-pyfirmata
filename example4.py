@@ -2,6 +2,8 @@ from pyfirmata import Arduino
 
 board = Arduino("/dev/ttyACM0")
 
+speed = 0.6  # l298n=0.3, vnh2sp30=0.6
+
 # l298n
 _ena = 11
 _enb = 3
@@ -9,7 +11,14 @@ _in1 = 6
 _in2 = 10
 _in3 = 9
 _in4 = 5
-speed = 0.3
+
+# Dual VNH2SP30
+_ena = 5
+_enb = 6
+_in1 = 8
+_in2 = 7
+_in3 = 9
+_in4 = 4
 
 in1 = board.get_pin("d:{}:o".format(_in1))
 in2 = board.get_pin("d:{}:o".format(_in2))
